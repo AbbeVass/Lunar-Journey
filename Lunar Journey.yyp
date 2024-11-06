@@ -35,7 +35,7 @@
   },
   "name":"Lunar Journey",
   "resources":[
-    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Shader2","path":"shaders/Shader2/Shader2.yy",},},
