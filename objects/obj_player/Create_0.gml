@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-vx = 20
+vMax = 7
+vx = 0
+acc = 0.5
