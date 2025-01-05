@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cogMount",
+  "%Name":"obj_cogmount",
   "eventList":[],
   "managed":true,
-  "name":"obj_cogMount",
+  "name":"obj_cogmount",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
