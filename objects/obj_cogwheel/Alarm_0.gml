@@ -1,3 +1,3 @@
-/// @description Call isConnectedTOStart()
+/// @description Call isConnectedToStart()
 
 spinning = isConnectedToStart();

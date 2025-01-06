@@ -1,5 +1,7 @@
 /// @description Variables and methods
 
+#macro draggedAlpha 0.7
+
 startWheel = false;
 spinning = false;
 rotationSpeed = 1;
@@ -47,3 +49,51 @@ function isConnectedToStart() {
 	functionRunning = false;
 	return false;
 }
+
+/**
+ * Run the wheel's step event manualy
+ */
+function runStep() {
+	if (spinning) {
+		image_angle += rotationSpeed;
+	}
+
+	// Start dragging if not a start wheel and no other wheel is dragged
+	if (mouse_check_button_pressed(mb_left) and !startWheel) {
+	    if (!global.draggingWheel && position_meeting(mouse_x, mouse_y, id)) {
+			global.draggingWheel = true;
+	        dragged = true;
+			spinning = false;
+	        offset_x = x - mouse_x;
+	        offset_y = y - mouse_y;
+			image_alpha = 0.7;
+			obj_controller_machine.addInstanceOnTop(id);
+	    } else {
+		
+			// Wait to make sure the dragged wheel has been picked up
+			alarm_set(0, 1);
+		}
+	}
+
+	// Stop dragging
+	if (mouse_check_button_released(mb_left) and !startWheel) {
+		if (dragged) {
+			global.draggingWheel = false;
+		    dragged = false;
+			image_alpha = 1;
+			depth = 1;
+		}
+	
+		// Wait to make sure the dragged wheel has been released
+		alarm_set(1, 1);
+	}
+
+	// If the wheel is dragged, follow the cursors position
+	if (dragged) {
+	    x = mouse_x + offset_x;
+	    y = mouse_y + offset_y;
+	}
+}
+
+// Make sure everythin is loaded before adding the wheel to the layer list
+alarm_set(2, 1);
