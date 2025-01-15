@@ -41,6 +41,7 @@
     {"id":{"name":"obj_controller_machine","path":"objects/obj_controller_machine/obj_controller_machine.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"pth_player_walkway","path":"paths/pth_player_walkway/pth_player_walkway.yy",},},
     {"id":{"name":"rm_machine","path":"rooms/rm_machine/rm_machine.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Shader2","path":"shaders/Shader2/Shader2.yy",},},

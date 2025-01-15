@@ -29,3 +29,4 @@ else if (vx != 0) {
 
 // Move the player
 x += vx;
+y = path_get_y(pth_player_walkway, (x - path_get_point_x(pth_player_walkway, 0)) / path_get_length(pth_player_walkway));
