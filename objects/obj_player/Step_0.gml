@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Player movement
 
 // Accelerate player right
 if (keyboard_check(vk_right)) {
@@ -29,4 +29,16 @@ else if (vx != 0) {
 
 // Move the player
 x += vx;
-y = path_get_y(pth_player_walkway, (x - path_get_point_x(pth_player_walkway, 0)) / path_get_length(pth_player_walkway));
+
+var path_start_x = path_get_point_x(path, 0);
+var path_end_x = path_start_x + path_get_length(path);
+	
+// Prevent the player from walking beyond the path
+if (x < path_start_x) {
+	x = path_start_x;
+} else if (x > path_end_x) {
+	x = path_end_x;
+}
+	
+// Follow the path
+y = path_get_y(path, (x - path_start_x) / path_get_length(path));
