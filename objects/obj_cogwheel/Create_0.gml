@@ -5,6 +5,7 @@
 startWheel = false;
 spinning = false;
 rotationSpeed = 1;
+snapRadius = 10;
 
 dragged = false;
 offset_x = 0;
@@ -80,6 +81,12 @@ function runStep() {
 		if (dragged) {
 			global.draggingWheel = false;
 		    dragged = false;
+			var cogMount = collision_circle(x, y, snapRadius, obj_cogmount, false, true);
+			if (cogMount) {
+				x = cogMount.x;
+				y = cogMount.y;
+			}
+			
 			image_alpha = 1;
 			depth = 1;
 		}
