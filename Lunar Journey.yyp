@@ -27,8 +27,8 @@
     {"$GMFolder":"","%Name":"cave","folderPath":"folders/Sprites/environments/cave.yy","name":"cave","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"forrest","folderPath":"folders/Sprites/environments/forrest.yy","name":"forrest","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"background","folderPath":"folders/Sprites/environments/forrest/background.yy","name":"background","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"foreground","folderPath":"folders/Sprites/environments/forrest/foreground.yy","name":"foreground","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"characters","folderPath":"folders/Sprites/environments/forrest/characters.yy","name":"characters","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"foreground","folderPath":"folders/Sprites/environments/forrest/foreground.yy","name":"foreground","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"puzzles","folderPath":"folders/Sprites/puzzles.yy","name":"puzzles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -44,6 +44,7 @@
   },
   "name":"Lunar Journey",
   "resources":[
+    {"id":{"name":"TODO","path":"notes/TODO/TODO.yy",},},
     {"id":{"name":"obj_cogmount","path":"objects/obj_cogmount/obj_cogmount.yy",},},
     {"id":{"name":"obj_cogwheel","path":"objects/obj_cogwheel/obj_cogwheel.yy",},},
     {"id":{"name":"obj_controller_machine","path":"objects/obj_controller_machine/obj_controller_machine.yy",},},
