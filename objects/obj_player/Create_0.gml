@@ -4,7 +4,7 @@ vMax = 6;
 vx = 0;
 acc = 0.5;
 
-path = pth_player_spawn;
+path = pth_player_cave;
 
 switch (room) {
 	case ("rm_spawn"):

@@ -1,9 +1,9 @@
 {
   "$GMPath":"",
-  "%Name":"pth_player_spawn",
+  "%Name":"pth_player_forest",
   "closed":false,
   "kind":1,
-  "name":"pth_player_spawn",
+  "name":"pth_player_forest",
   "parent":{
     "name":"Paths",
     "path":"folders/Paths.yy",
