@@ -1,22 +1,6 @@
-tankebubbla med nyckel
 nyckel som hämtas och följer med karaktären
-svampgubben dyker upp efter att grottan upptäckts
 ljud
-grotta walkway
-gå in i grottan
 kugghjulspussel
 gripklopussel
 back-to-start-knapp
-
-
-???
-skugga/gräs skogen
-gräs grottan
-små svampar/sten grottan
-bakgrund kugghjulspussel
-vad händer med upplockade bollar i klomaskinen
-vad säger svampgubben
-vad händer efter klomaskinen
-huvudmeny
-
-VAD SKA TAS MED TILL MÄSSAN?
+guppande/svävande tankebubblor

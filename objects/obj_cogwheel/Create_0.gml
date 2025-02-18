@@ -81,10 +81,10 @@ function runStep() {
 		if (dragged) {
 			global.draggingWheel = false;
 		    dragged = false;
-			var cogMount = collision_circle(x, y, snapRadius, obj_cogmount, false, true);
-			if (cogMount) {
-				x = cogMount.x;
-				y = cogMount.y;
+			var peg = collision_circle(x, y, snapRadius, obj_peg, false, true);
+			if (peg) {
+				x = peg.x;
+				y = peg.y;
 			}
 			
 			image_alpha = 1;

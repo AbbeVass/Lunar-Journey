@@ -17,7 +17,7 @@ function addInstanceOnTop(instId) {
 
 startWheelX = 1024;
 startWheelY = 320;
-var startWheel = instance_create_layer(startWheelX, startWheelY, "Cogwheels", obj_cogwheel);
+var startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", obj_cogwheel);
 
 startWheel.startWheel = true;
 startWheel.spinning = true;
