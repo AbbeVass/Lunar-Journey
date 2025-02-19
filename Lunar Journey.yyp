@@ -99,7 +99,6 @@
     {"id":{"name":"pth_player_forest","path":"paths/pth_player_forest/pth_player_forest.yy",},},
     {"id":{"name":"rm_cave","path":"rooms/rm_cave/rm_cave.yy",},},
     {"id":{"name":"rm_forest","path":"rooms/rm_forest/rm_forest.yy",},},
-    {"id":{"name":"rm_machine","path":"rooms/rm_machine/rm_machine.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"rm_puzzle_clawMachine","path":"rooms/rm_puzzle_clawMachine/rm_puzzle_clawMachine.yy",},},
     {"id":{"name":"rm_puzzle_cogwheels","path":"rooms/rm_puzzle_cogwheels/rm_puzzle_cogwheels.yy",},},
@@ -182,7 +181,6 @@
     {"roomId":{"name":"rm_cave","path":"rooms/rm_cave/rm_cave.yy",},},
     {"roomId":{"name":"rm_puzzle_cogwheels","path":"rooms/rm_puzzle_cogwheels/rm_puzzle_cogwheels.yy",},},
     {"roomId":{"name":"rm_puzzle_clawMachine","path":"rooms/rm_puzzle_clawMachine/rm_puzzle_clawMachine.yy",},},
-    {"roomId":{"name":"rm_machine","path":"rooms/rm_machine/rm_machine.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

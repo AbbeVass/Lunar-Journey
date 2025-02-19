@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"Object14",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_cogwheel","path":"objects/obj_cogwheel/obj_cogwheel.yy",},"propertyId":{"name":"scale","path":"objects/obj_cogwheel/obj_cogwheel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.15",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",

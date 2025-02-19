@@ -1,6 +1,6 @@
 /// @description Variables
 
-vMax = 20;//6;
+vMax = 6;
 vx = 0;
 acc = 0.5;
 

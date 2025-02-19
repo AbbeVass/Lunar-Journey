@@ -3,6 +3,7 @@
 #macro draggedAlpha 0.7
 
 startWheel = false;
+endWheel = false;
 spinning = false;
 rotationSpeed = 1;
 snapRadius = 10;
@@ -12,6 +13,9 @@ offset_x = 0;
 offset_y = 0;
 
 functionRunning = false;
+
+image_xscale = scale;
+image_yscale = scale;
 
 /**
  * Check if this cogwheel is connected to a start wheel
@@ -60,7 +64,7 @@ function runStep() {
 	}
 
 	// Start dragging if not a start wheel and no other wheel is dragged
-	if (mouse_check_button_pressed(mb_left) and !startWheel) {
+	if (mouse_check_button_pressed(mb_left) and !startWheel and !endWheel) {
 	    if (!global.draggingWheel && position_meeting(mouse_x, mouse_y, id)) {
 			global.draggingWheel = true;
 	        dragged = true;
@@ -77,7 +81,7 @@ function runStep() {
 	}
 
 	// Stop dragging
-	if (mouse_check_button_released(mb_left) and !startWheel) {
+	if (mouse_check_button_released(mb_left) and !startWheel and !endWheel) {
 		if (dragged) {
 			global.draggingWheel = false;
 		    dragged = false;
@@ -85,6 +89,8 @@ function runStep() {
 			if (peg) {
 				x = peg.x;
 				y = peg.y;
+			} else {
+				instance_destroy(id);
 			}
 			
 			image_alpha = 1;
@@ -102,5 +108,5 @@ function runStep() {
 	}
 }
 
-// Make sure everythin is loaded before adding the wheel to the layer list
+// Make sure everything is loaded before adding the wheel to the layer list
 alarm_set(2, 1);

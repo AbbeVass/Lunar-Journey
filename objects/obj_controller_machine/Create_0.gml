@@ -15,11 +15,18 @@ function addInstanceOnTop(instId) {
 	ds_list_add(layerList, instId);
 }
 
-startWheelX = 1024;
-startWheelY = 320;
-var startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", obj_cogwheel);
+startWheelX = 859;
+startWheelY = 973;
+var startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", Object15);
 
 startWheel.startWheel = true;
 startWheel.spinning = true;
+
+startWheelX = 1523;
+startWheelY = 469;
+startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", Object15);
+
+startWheel.endWheel = true;
+startWheel.spinning = false;
 
 global.draggingWheel = false;
