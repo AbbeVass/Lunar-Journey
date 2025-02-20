@@ -1,6 +1,4 @@
-nyckel som hämtas och följer med karaktären
 ljud
 kugghjulspussel
 gripklopussel
-back-to-start-knapp
 guppande/svävande tankebubblor

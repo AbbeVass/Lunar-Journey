@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menu_btn_exit",
+  "%Name":"obj_btn_par",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menu_btn_exit",
+  "name":"obj_btn_par",
   "overriddenProperties":[],
   "parent":{
     "name":"menu",
     "path":"folders/Objects/menu.yy",
   },
-  "parentObjectId":{
-    "name":"obj_btn_par",
-    "path":"objects/obj_btn_par/obj_btn_par.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_menu_btn_exit",
-    "path":"sprites/spr_menu_btn_exit/spr_menu_btn_exit.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

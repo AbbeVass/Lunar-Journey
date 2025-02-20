@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menu_btn_exit",
+  "%Name":"obj_puzzle_cog_pick_1",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menu_btn_exit",
+  "name":"obj_puzzle_cog_pick_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"menu",
-    "path":"folders/Objects/menu.yy",
+    "name":"cogwheels",
+    "path":"folders/Objects/puzzles/cogwheels.yy",
   },
-  "parentObjectId":{
-    "name":"obj_btn_par",
-    "path":"objects/obj_btn_par/obj_btn_par.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_btn_exit",
-    "path":"sprites/spr_menu_btn_exit/spr_menu_btn_exit.yy",
+    "name":"spr_puzzle_cogheel_1",
+    "path":"sprites/spr_puzzle_cogheel_1/spr_puzzle_cogheel_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

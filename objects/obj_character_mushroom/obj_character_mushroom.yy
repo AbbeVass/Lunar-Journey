@@ -10,8 +10,8 @@
   "name":"obj_character_mushroom",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"forest",
+    "path":"folders/Objects/forest.yy",
   },
   "parentObjectId":null,
   "persistent":false,

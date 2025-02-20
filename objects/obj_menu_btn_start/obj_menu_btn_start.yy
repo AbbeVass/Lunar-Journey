@@ -8,10 +8,13 @@
   "name":"obj_menu_btn_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"menu",
+    "path":"folders/Objects/menu.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_btn_par",
+    "path":"objects/obj_btn_par/obj_btn_par.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -6,8 +6,8 @@
   "name":"obj_clawMachine_claw",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"clawMachine",
+    "path":"folders/Objects/puzzles/clawMachine.yy",
   },
   "parentObjectId":null,
   "persistent":false,

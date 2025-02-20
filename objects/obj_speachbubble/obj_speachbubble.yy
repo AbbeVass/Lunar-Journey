@@ -6,8 +6,8 @@
   "name":"obj_speachbubble",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"forest",
+    "path":"folders/Objects/forest.yy",
   },
   "parentObjectId":null,
   "persistent":false,

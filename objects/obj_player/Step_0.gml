@@ -43,6 +43,24 @@ if (global.playerControl) {
 	// Follow the path
 	y = path_get_y(path, pathPosition);
 	x = path_get_x(path, pathPosition);
+	
+	// Walking animation
+	if (vx > 0 and animationState == state.STANDING) {
+		sprite_index = spr_player_walk;
+		image_index = 0;
+		image_xscale = 1;
+		animationState = state.WALKING;
+	} else if (vx < 0 and animationState == state.STANDING) {
+		sprite_index = spr_player_walk;
+		image_index = 0;
+		image_xscale = -1;
+		animationState = state.WALKING;
+	} else if (vx == 0 and animationState == state.WALKING) {
+		sprite_index = spr_player_default;
+		image_index = 0;
+		image_xscale = 1;
+		animationState = state.STANDING;
+	}
 }
 
 // FIXME

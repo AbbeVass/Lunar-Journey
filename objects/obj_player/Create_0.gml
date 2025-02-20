@@ -4,6 +4,12 @@ vMax = 6;
 vx = 0;
 acc = 0.5;
 
+enum state {
+	STANDING,
+	WALKING
+}
+animationState = state.STANDING;
+
 enum enter_cave {
 	NONE,
 	START,

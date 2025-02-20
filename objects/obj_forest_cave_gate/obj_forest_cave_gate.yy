@@ -6,8 +6,8 @@
   "name":"obj_forest_cave_gate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"forest",
+    "path":"folders/Objects/forest.yy",
   },
   "parentObjectId":null,
   "persistent":false,
