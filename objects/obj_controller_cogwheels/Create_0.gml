@@ -17,16 +17,16 @@ function addInstanceOnTop(instId) {
 
 startWheelX = 859;
 startWheelY = 973;
-var startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", obj_cogwheel_1);
+var startWheel = instance_create_layer(startWheelX, startWheelY, "start_end_wheels", obj_cogwheel_1);
 
 startWheel.startWheel = true;
 startWheel.spinning = true;
 
-startWheelX = 1523;
-startWheelY = 469;
-startWheel = instance_create_layer(startWheelX, startWheelY, "cogwheels", obj_cogwheel_1);
+endWheelX = 1523;
+endWheelY = 469;
+endtWheel = instance_create_layer(startWheelX, startWheelY, "start_end_wheels", obj_cogwheel_1);
 
-startWheel.endWheel = true;
-startWheel.spinning = false;
+endWheel.endWheel = true;
+endWheel.spinning = false;
 
 global.draggingWheel = false;
