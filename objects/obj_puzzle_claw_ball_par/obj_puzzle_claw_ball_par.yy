@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cogwheel_1",
+  "%Name":"obj_puzzle_claw_ball_par",
   "eventList":[],
   "managed":true,
-  "name":"obj_cogwheel_1",
+  "name":"obj_puzzle_claw_ball_par",
   "overriddenProperties":[],
   "parent":{
-    "name":"cogwheels",
-    "path":"folders/Objects/puzzles/cogwheels.yy",
+    "name":"clawMachine",
+    "path":"folders/Objects/puzzles/clawMachine.yy",
   },
-  "parentObjectId":{
-    "name":"obj_cogwheel_par",
-    "path":"objects/obj_cogwheel_par/obj_cogwheel_par.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_puzzle_cogheel_1",
-    "path":"sprites/spr_puzzle_cogheel_1/spr_puzzle_cogheel_1.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

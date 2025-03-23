@@ -29,7 +29,7 @@ if (mouse_check_button_released(mb_left) && !startWheel) {
 		if (peg) {
 			x = peg.x;
 			y = peg.y;
-			if (collision_circle(x, y, radius-tipLength, obj_cogwheel_par, true, true)) {
+			if (collision_circle(x, y, radius-tipLength, obj_puzzle_cog_par, true, true)) {
 				instance_destroy(id);
 			}
 		} else {

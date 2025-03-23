@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_puzzle_calw_controls_left",
+  "%Name":"spr_puzzle_claw_controls_default",
   "bboxMode":0,
   "bbox_bottom":830,
-  "bbox_left":787,
+  "bbox_left":816,
   "bbox_right":1266,
   "bbox_top":674,
   "collisionKind":1,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"01cab8b8-e1cb-4e64-9908-120275cae94e","name":"01cab8b8-e1cb-4e64-9908-120275cae94e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0a5ea2cd-f740-4319-9f97-70110e263dde","name":"0a5ea2cd-f740-4319-9f97-70110e263dde","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"261cdca3-7399-45af-8d1b-de5753ed5b26","blendMode":0,"displayName":"default","isLocked":false,"name":"261cdca3-7399-45af-8d1b-de5753ed5b26","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ed3fd1b4-a4fb-4304-b79c-10036d5f90fd","blendMode":0,"displayName":"default","isLocked":false,"name":"ed3fd1b4-a4fb-4304-b79c-10036d5f90fd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_puzzle_calw_controls_left",
+  "name":"spr_puzzle_claw_controls_default",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_puzzle_calw_controls_left",
+    "%Name":"spr_puzzle_claw_controls_default",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_puzzle_calw_controls_left",
+    "name":"spr_puzzle_claw_controls_default",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"01cab8b8-e1cb-4e64-9908-120275cae94e","path":"sprites/spr_puzzle_calw_controls_left/spr_puzzle_calw_controls_left.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"85bc601a-cb9d-443c-9e13-4484de59930f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a5ea2cd-f740-4319-9f97-70110e263dde","path":"sprites/spr_puzzle_claw_controls_default/spr_puzzle_claw_controls_default.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1742f3e7-b4ef-49d5-b46d-29d7d561b2e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

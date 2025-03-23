@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cogwheel_2",
+  "%Name":"obj_puzzle_cog_1",
   "eventList":[],
   "managed":true,
-  "name":"obj_cogwheel_2",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_cogwheel_par","path":"objects/obj_cogwheel_par/obj_cogwheel_par.yy",},"propertyId":{"name":"scale","path":"objects/obj_cogwheel_par/obj_cogwheel_par.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.15",},
-  ],
+  "name":"obj_puzzle_cog_1",
+  "overriddenProperties":[],
   "parent":{
     "name":"cogwheels",
     "path":"folders/Objects/puzzles/cogwheels.yy",
   },
   "parentObjectId":{
-    "name":"obj_cogwheel_par",
-    "path":"objects/obj_cogwheel_par/obj_cogwheel_par.yy",
+    "name":"obj_puzzle_cog_par",
+    "path":"objects/obj_puzzle_cog_par/obj_puzzle_cog_par.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_puzzle_cogheel_2",
-    "path":"sprites/spr_puzzle_cogheel_2/spr_puzzle_cogheel_2.yy",
+    "name":"spr_puzzle_cogheel_1",
+    "path":"sprites/spr_puzzle_cogheel_1/spr_puzzle_cogheel_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

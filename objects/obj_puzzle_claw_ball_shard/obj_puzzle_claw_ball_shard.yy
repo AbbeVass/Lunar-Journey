@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clawMachine_claw",
+  "%Name":"obj_puzzle_claw_ball_shard",
   "eventList":[],
   "managed":true,
-  "name":"obj_clawMachine_claw",
+  "name":"obj_puzzle_claw_ball_shard",
   "overriddenProperties":[],
   "parent":{
     "name":"clawMachine",
     "path":"folders/Objects/puzzles/clawMachine.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_puzzle_claw_ball_par",
+    "path":"objects/obj_puzzle_claw_ball_par/obj_puzzle_claw_ball_par.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_puzzle_claw_claw_open",
-    "path":"sprites/spr_puzzle_claw_claw_open/spr_puzzle_claw_claw_open.yy",
+    "name":"spr_puzzle_claw_ball_shard",
+    "path":"sprites/spr_puzzle_claw_ball_shard/spr_puzzle_claw_ball_shard.yy",
   },
   "spriteMaskId":null,
   "visible":true,
