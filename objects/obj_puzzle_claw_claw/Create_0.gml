@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Variables and methods
 
 vMax = 10;
 boundary = instance_find(obj_puzzle_claw_boundary, 0);

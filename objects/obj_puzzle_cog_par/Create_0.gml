@@ -36,7 +36,7 @@ function isConnectedToStart() {
     // Get a list of all touching wheels
 	var collisionList = ds_list_create();
 	
-	var numCollision = collision_circle_list(x, y, radius, obj_cogwheel_par, true, true, collisionList, true);
+	var numCollision = collision_circle_list(x, y, radius, obj_puzzle_cog_par, true, true, collisionList, true);
 	
     // Loop through the list and use recursion to check if any wheel with a conneciton is a start wheel
 	for (var i = 0; i < numCollision; i++) {

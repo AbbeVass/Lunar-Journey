@@ -1,4 +1,4 @@
 ljud
-kugghjulspussel
-gripklopussel
 guppande/svävande tankebubblor
+wasd-tangenter
+esc -> tillbaks till meny
