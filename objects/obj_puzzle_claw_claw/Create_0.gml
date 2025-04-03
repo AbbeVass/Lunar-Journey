@@ -1,7 +1,17 @@
 /// @description Variables and methods
 
-vMax = 10;
+enum claw_state {
+	DEFAULT,
+	GO_DOWN,
+	GRAB,
+	GO_UP
+}
+control_state = claw_state.DEFAULT;
+
+vMax = 5;
 boundary = instance_find(obj_puzzle_claw_boundary, 0);
+
+picked_ball = noone;
 
 ctrl_layer_id = layer_get_id("controls");
 

@@ -4,7 +4,7 @@ vMax = 6;
 vx = 0;
 acc = 0.5;
 
-enum state {
+enum player_state {
 	STANDING,
 	WALKING
 }

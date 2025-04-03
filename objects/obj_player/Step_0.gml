@@ -45,21 +45,21 @@ if (global.playerControl) {
 	x = path_get_x(path, pathPosition);
 	
 	// Walking animation
-	if (vx > 0 and animationState == state.STANDING) {
+	if (vx > 0 and animationState == player_state.STANDING) {
 		sprite_index = spr_player_walk;
 		image_index = 0;
 		image_xscale = 1;
-		animationState = state.WALKING;
-	} else if (vx < 0 and animationState == state.STANDING) {
+		animationState = player_state.WALKING;
+	} else if (vx < 0 and animationState == player_state.STANDING) {
 		sprite_index = spr_player_walk;
 		image_index = 0;
 		image_xscale = -1;
-		animationState = state.WALKING;
-	} else if (vx == 0 and animationState == state.WALKING) {
+		animationState = player_state.WALKING;
+	} else if (vx == 0 and animationState == player_state.WALKING) {
 		sprite_index = spr_player_default;
 		image_index = 0;
 		image_xscale = 1;
-		animationState = state.STANDING;
+		animationState = player_state.STANDING;
 	}
 }
 
