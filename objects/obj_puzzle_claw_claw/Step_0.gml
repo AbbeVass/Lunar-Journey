@@ -4,37 +4,44 @@ switch (control_state) {
     
     // Controlling
     case claw_state.DEFAULT:
-		if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
-			// Move claw right
-			change_controls_sprite(spr_puzzle_claw_controls_right);
-			
-			// Stay inside the boundary
-			// Sprite height becomes its width because the claw is rotated 90 deg
-			if (x < boundary.x + boundary.sprite_width - sprite_height/2 - vMax) {
-				x += vMax;
-			} else {
-				x = boundary.x + boundary.sprite_width - sprite_height/2;
-			}
-		} else if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
-			// Move claw left
-			change_controls_sprite(spr_puzzle_claw_controls_left);
-			
-			// Stay inside the boundary
-			// Sprite height becomes its width because the claw is rotated 90 deg
-			if (x > boundary.x + sprite_height/2 + vMax) {
-				x -= vMax;
-			} else {
-				x = boundary.x + sprite_height/2;
-			}
+		if (y < startY) {
+			change_controls_sprite(spr_puzzle_claw_controls_down);
+			y += vMax;
+		} else if (y != startY) {
+			y = startY;
 		} else {
-			// Stationary
-			change_controls_sprite(spr_puzzle_claw_controls_default);
-		}
+			if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
+				// Move claw right
+				change_controls_sprite(spr_puzzle_claw_controls_right);
+			
+				// Stay inside the boundary
+				// Sprite height becomes its width because the claw is rotated 90 deg
+				if (x < boundary.x + boundary.sprite_width - sprite_height/2 - vMax) {
+					x += vMax;
+				} else {
+					x = boundary.x + boundary.sprite_width - sprite_height/2;
+				}
+			} else if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
+				// Move claw left
+				change_controls_sprite(spr_puzzle_claw_controls_left);
+			
+				// Stay inside the boundary
+				// Sprite height becomes its width because the claw is rotated 90 deg
+				if (x > boundary.x + sprite_height/2 + vMax) {
+					x -= vMax;
+				} else {
+					x = boundary.x + sprite_height/2;
+				}
+			} else {
+				// Stationary
+				change_controls_sprite(spr_puzzle_claw_controls_default);
+			}
 		
-		// Go down to grab a ball
-        if (keyboard_check_pressed(vk_space)) {
-            control_state = claw_state.GO_DOWN;
-        }
+			// Go down to grab a ball
+	        if (keyboard_check_pressed(vk_space)) {
+	            control_state = claw_state.GO_DOWN;
+	        }
+		}
     break;
     
     // Going down
@@ -63,6 +70,7 @@ switch (control_state) {
         else {
             picked_ball.phy_active = false;
             picked_ball.phy_position_x = x;
+			sprite_index = spr_puzzle_claw_claw_closed;
             control_state = claw_state.GO_UP;
         }
     break;
@@ -73,12 +81,16 @@ switch (control_state) {
         y -= vMax;
         if (picked_ball) {
             picked_ball.phy_position_y = y+32;
-        }
+			if (y <= -100) {
+	            instance_destroy(picked_ball);
+				sprite_index = spr_puzzle_claw_claw_open;
+	            control_state = claw_state.DEFAULT;
+	        }
+        } else if (y <= startY) {
+			y = startY;
+			control_state = claw_state.DEFAULT;
+		}
         
-        if (y <= 32) {
-            y = 32;
-            instance_destroy(picked_ball);
-            control_state = claw_state.DEFAULT;
-        }
+        
     break;
 }

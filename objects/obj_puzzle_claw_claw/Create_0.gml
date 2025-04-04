@@ -8,6 +8,8 @@ enum claw_state {
 }
 control_state = claw_state.DEFAULT;
 
+startY = 205;
+y = startY;
 vMax = 5;
 boundary = instance_find(obj_puzzle_claw_boundary, 0);
 
