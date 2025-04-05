@@ -13,7 +13,10 @@ y = startY;
 vMax = 5;
 boundary = instance_find(obj_puzzle_claw_boundary, 0);
 
+sense_distance = 10;
+ball_radius = obj_puzzle_claw_ball_empty.sprite_width/2;
 picked_ball = noone;
+releaseY = -100;
 
 ctrl_layer_id = layer_get_id("controls");
 
