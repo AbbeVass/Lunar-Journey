@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"items",
-    "path":"folders/Sprites/items.yy",
+    "name":"runes",
+    "path":"folders/Sprites/items/runes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

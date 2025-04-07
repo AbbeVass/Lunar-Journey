@@ -8,7 +8,7 @@ enum player_state {
 	STANDING,
 	WALKING
 }
-animationState = state.STANDING;
+animationState = player_state.STANDING;
 
 enum enter_cave {
 	NONE,

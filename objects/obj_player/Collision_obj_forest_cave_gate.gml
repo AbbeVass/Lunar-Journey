@@ -18,12 +18,13 @@ if (array_contains(inventory, "cave_key")) {
 	// Thinking about the key
 	if (!instance_exists(obj_speachbubble)) {
 		bubble = instance_create_depth(x - 100, y - sprite_height - 150, -100, obj_speachbubble);
-		bubble.image_xscale = 0.2;
-		bubble.image_yscale = 0.2;
+		bubble.image_xscale = 0.1;
+		bubble.image_yscale = 0.1;
 		
 		bubbleContent = instance_create_depth(bubble.x, bubble.y, -101, obj_key);
 		bubbleContent.image_xscale = 0.2;
 		bubbleContent.image_yscale = 0.2;
+		bubbleContent.image_blend = c_ltgrey;
 	} else {
 		
 		// Follow the player
