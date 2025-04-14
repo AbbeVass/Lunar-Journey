@@ -8,16 +8,9 @@ if (array_contains(inventory, "cave_key")) {
 	item = noone;
 } else if (seqState = enter_cave.NONE) {
 	
-	// Spawn the mushroom guy
-	if (!instance_exists(obj_character_mushroom)) {
-		var mushroom = instance_create_layer(8440, 953.7, "characters", obj_character_mushroom);
-		mushroom.image_xscale = 0.3;
-		mushroom.image_yscale = 0.3;
-	}
-	
 	// Thinking about the key
 	if (!instance_exists(obj_speachbubble)) {
-		bubble = instance_create_depth(x - 100, y - sprite_height - 150, -100, obj_speachbubble);
+		bubble = instance_create_depth(x, y - sprite_height - 20, -100, obj_speachbubble);
 		bubble.image_xscale = 0.1;
 		bubble.image_yscale = 0.1;
 		
