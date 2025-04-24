@@ -97,7 +97,5 @@ switch (control_state) {
 			y = startY;
 			control_state = claw_state.DEFAULT;
 		}
-        
-        
     break;
 }
