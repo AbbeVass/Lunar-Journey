@@ -2,7 +2,7 @@
   "$GMWindowsOptions":"",
   "%Name":"Windows",
   "name":"Windows",
-  "option_windows_allow_fullscreen_switching":false,
+  "option_windows_allow_fullscreen_switching":true,
   "option_windows_borderless":true,
   "option_windows_company_info":"AbyGames UF",
   "option_windows_copyright_info":"AbyGames UF",
