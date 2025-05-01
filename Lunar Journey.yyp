@@ -72,8 +72,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_spawn","path":"rooms/rm_spawn/rm_spawn.yy",},},
     {"roomId":{"name":"rm_machine","path":"rooms/rm_machine/rm_machine.yy",},},
+    {"roomId":{"name":"rm_spawn","path":"rooms/rm_spawn/rm_spawn.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
