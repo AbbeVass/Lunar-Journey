@@ -10,6 +10,8 @@ if (fadeIn) {
 	image_alpha -= fadeSpeed;
 	if (image_alpha <= 0) {
 		instance_destroy(id);
-		obj_player.seqState = enter_cave.FALL_DOWN;
+		if (room == rm_cave) {
+			obj_player.seqState = enter_cave.FALL_DOWN;
+		}
 	}
 }
