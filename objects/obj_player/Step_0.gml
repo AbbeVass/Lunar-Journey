@@ -44,21 +44,21 @@ if (global.playerControl) {
 	y = path_get_y(path, pathPosition);
 	x = path_get_x(path, pathPosition);
 	
-	// Walking animation
+	// Walking animation	
 	if (vx > 0 and animationState == player_state.STANDING) {
 		sprite_index = spr_player_walk;
 		image_index = 0;
-		image_xscale = 1;
+		setScale();
 		animationState = player_state.WALKING;
 	} else if (vx < 0 and animationState == player_state.STANDING) {
 		sprite_index = spr_player_walk;
 		image_index = 0;
-		image_xscale = -1;
+		setScale(true);
 		animationState = player_state.WALKING;
 	} else if (vx == 0 and animationState == player_state.WALKING) {
 		sprite_index = spr_player_default;
 		image_index = 0;
-		image_xscale = 1;
+		setScale();
 		animationState = player_state.STANDING;
 	}
 }
@@ -80,6 +80,13 @@ if (item != noone) {
 switch (seqState) {
 	case enter_cave.START:
 		global.playerControl = false;
+		
+		// Set player sprite to default
+		sprite_index = spr_player_default;
+		image_index = 0;
+		setScale();
+		animationState = player_state.STANDING;
+		
 		seqState = enter_cave.GATE_FADEOUT;
 	break;
 	
@@ -123,4 +130,12 @@ switch (seqState) {
 			global.playerControl = true;
 		}
 	break;
+}
+
+// FIXME
+// Go into the machine in the cave
+if (room == rm_cave && x > 4100) {
+	if (!instance_exists(obj_fade)) {
+		instance_create_depth(0, 0, -9999, obj_fade);
+	}
 }

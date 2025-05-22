@@ -3,7 +3,12 @@
 if (fadeIn) {
 	image_alpha += fadeSpeed;
 	if (image_alpha >= 1) {
-		room_goto_next();
+		//FIXME
+		if (room == rm_cave) {
+			room_goto(rm_puzzle_cogwheels);
+		} else {
+			room_goto_next();
+		}
 		fadeIn = false;
 	}
 } else {

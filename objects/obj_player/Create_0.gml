@@ -6,9 +6,24 @@ acc = 0.5;
 
 enum player_state {
 	STANDING,
+	WALK_START,
+	WALK_STOP,
 	WALKING
 }
 animationState = player_state.STANDING;
+height = 300;
+
+function setScale(_negative = false) {
+	image_xscale = 1;
+	image_yscale = 1;
+	if (_negative) {
+		image_xscale = -height/sprite_height;
+		image_yscale = height/sprite_height;
+	} else {
+		image_xscale = height/sprite_height;
+		image_yscale = height/sprite_height;
+	}
+}
 
 enum enter_cave {
 	NONE,

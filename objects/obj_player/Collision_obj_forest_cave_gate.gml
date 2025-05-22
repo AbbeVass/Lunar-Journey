@@ -11,6 +11,7 @@ if (array_contains(inventory, "cave_key")) {
 	// Thinking about the key
 	if (!instance_exists(obj_speachbubble)) {
 		bubble = instance_create_depth(x, y - sprite_height, -100, obj_speachbubble);
+		bubble.content = content_type.KEY;
 		
 	} else {
 
